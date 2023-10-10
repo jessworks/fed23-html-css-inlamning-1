@@ -52,21 +52,24 @@
       <a href="tel:+46724436745">072 443 67 45</a>
     </address>
     <h2>Let's talk</h2>
-    <form>
+    <form action="/submit">
       <label for="fname">First name</label>
-      <input type="text" id="fname">
+      <input type="text" id="fname" name="firstname">
       <label for="lname">Last name</label>
-      <input type="text" id="lname">
+      <input type="text" id="lname" name="lastname">
       <label for="email">E-mail</label>
-      <input type="email" id="email">
+      <input type="email" id="email" name="email">
       <label for="phone">Phone number</label>
-      <input type="number" id="phone">
-      <select>
-        <option>Collaboration</option>
-        <option>Employment</option>
-        <option>Project</option>
+      <input type="number" id="phone" name="phone">
+      <label for="subject">Subject</label>
+      <select id="subject" name="subject">
+        <option value="collaboration">Collaboration</option>
+        <option value="employment">Employment</option>
+        <option value="project">Project</option>
+        <option value="other">Other</option>
       </select>
-      <textarea rows="4" cols="25"></textarea>
+      <label for="message">Tell me something</label>
+      <textarea id="message" name="message" rows="4" cols="25"></textarea>
       <input type="reset" value="Clear">
       <input type="submit" value="Send">
     </form>
@@ -96,7 +99,7 @@
       <article>
         <h3>Position and time of employment</h3>
         <h4>Employer</h4>
-        <p>Description of tasks and employment</p>
+        <p>Description of tasks and accomplishments</p>
       </article>
     </section>
   </main>
